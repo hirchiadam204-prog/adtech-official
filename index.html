@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdTech Elite | Premium Tech & Gaming Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --gold-primary: #D4AF37;
+            --gold-light: #F3E5AB;
+            --gold-dark: #AA7C11;
+            --bg-dark: #111111;
+            --bg-card: #1c1c1c;
+            --text-main: #FFFFFF;
+            --text-muted: #CCCCCC;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background-color: var(--bg-dark); color: var(--text-main); overflow-x: hidden; }
+        header { background: rgba(17, 17, 17, 0.95); padding: 20px 8%; display: flex; justify-content: space-between; align-items: center; position: fixed; width: 100%; top: 0; z-index: 1000; border-bottom: 2px solid var(--gold-primary); box-shadow: 0 4px 20px rgba(212, 175, 55, 0.1); }
+        .logo-container { display: flex; align-items: center; gap: 15px; }
+        .logo-img { width: 50px; height: 50px; border-radius: 50%; border: 2px solid var(--gold-primary); object-fit: cover; }
+        .logo-text { font-size: 24px; font-weight: 700; background: linear-gradient(45deg, var(--text-main), var(--gold-primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; letter-spacing: 1px; }
+        .hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 20px; background: radial-gradient(circle at center, rgba(212,175,55,0.15) 0%, rgba(11,11,11,1) 70%); margin-top: 60px; }
+        .hero h1 { font-size: 56px; font-weight: 700; margin-bottom: 15px; color: var(--text-main); }
+        .hero h1 span { color: var(--gold-primary); text-shadow: 0 0 10px rgba(212, 175, 55, 0.3); }
+        .hero p { font-size: 18px; color: var(--text-muted); max-width: 600px; margin-bottom: 30px; line-height: 1.6; }
+        .cta-btn { background: linear-gradient(45deg, var(--gold-dark), var(--gold-primary)); color: #000; padding: 12px 35px; font-size: 16px; font-weight: 600; border: none; border-radius: 25px; cursor: pointer; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4); }
+        .cta-btn:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(212, 175, 55, 0.6); background: linear-gradient(45deg, var(--gold-primary), var(--gold-light)); }
+        .services { padding: 100px 8%; text-align: center; }
+        .section-title { font-size: 36px; margin-bottom: 50px; position: relative; display: inline-block; }
+        .section-title::after { content: ''; position: absolute; width: 60%; height: 3px; background: var(--gold-primary); bottom: -10px; left: 20%; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 20px; }
+        .card { background-color: var(--bg-card); padding: 40px 30px; border-radius: 15px; border: 1px solid rgba(212, 175, 55, 0.1); transition: all 0.3s ease; }
+        .card:hover { transform: translateY(-10px); border-color: var(--gold-primary); box-shadow: 0 10px 25px rgba(212, 175, 55, 0.15); }
+        .card i { font-size: 45px; color: var(--gold-primary); margin-bottom: 20px; }
+        .card h3 { font-size: 22px; margin-bottom: 15px; color: var(--text-main); }
+        .card p { color: var(--text-muted); font-size: 14px; line-height: 1.6; }
+        .follow-us { padding: 60px 8%; text-align: center; border-top: 1px solid rgba(212, 175, 55, 0.1); }
+        .social-links { display: flex; justify-content: center; gap: 30px; margin-top: 20px; }
+        .social-icon { font-size: 30px; color: var(--text-main); transition: all 0.3s ease; text-decoration: none; display: flex; align-items: center; gap: 10px; padding: 10px 20px; border-radius: 30px; border: 1px solid rgba(255,255,255,0.1); }
+        .social-icon.tiktok:hover { color: #ff0050; border-color: #ff0050; }
+        .social-icon.youtube:hover { color: #ff0000; border-color: #ff0000; }
+        footer { background: #0a0a0a; padding: 30px; text-align: center; border-top: 1px solid rgba(212, 175, 55, 0.1); color: var(--text-muted); font-size: 14px; }
+        footer span { color: var(--gold-primary); font-weight: 600; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="image_f5a9ee.jpg" alt="AdTech Elite Logo" class="logo-img">
+            <div class="logo-text">AdTech Elite</div>
+        </div>
+    </header>
+    <section class="hero">
+        <h1>Welcome to <span>AdTech Elite</span></h1>
+        <p>Premium destination for pro system configurations, high-tier visual edits, maximum gaming optimization, and elite tech insights.</p>
+        <a href="https://www.youtube.com/@ad_techbyadam" target="_blank" class="cta-btn">Visit Our Channel</a>
+    </section>
+    <section class="services">
+        <h2 class="section-title">Our Expertise</h2>
+        <div class="grid">
+            <div class="card">
+                <i class="fa-brands fa-windows"></i>
+                <h3>System Optimization</h3>
+                <p>Advanced system tweaks, power plans, and internal optimization to unlock full hardware potential safely.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-video"></i>
+                <h3>Professional Edits</h3>
+                <p>High-end video editing and dynamic visual design concepts tailored to make content stand out absolutely.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-gamepad"></i>
+                <h3>Roblox & Scripting</h3>
+                <p>Custom Lua scripting, advanced GUI environments, and game mechanics optimization for peak performance.</p>
+            </div>
+        </div>
+    </section>
+    <section class="follow-us">
+        <h2 class="section-title">Follow The Journey</h2>
+        <div class="social-links">
+            <a href="https://www.tiktok.com/@ad_techbyadam" target="_blank" class="social-icon tiktok">
+                <i class="fa-brands fa-tiktok"></i> TikTok
+            </a>
+            <a href="https://www.youtube.com/@ad_techbyadam" target="_blank" class="social-icon youtube">
+                <i class="fa-brands fa-youtube"></i> YouTube
+            </a>
+        </div>
+    </section>
+    <footer>
+        <p>This website was proudly made by <span>Adam Hirchi</span> &copy; 2026. All Elite Rights Reserved.</p>
+    </footer>
+</body>
+</html>
